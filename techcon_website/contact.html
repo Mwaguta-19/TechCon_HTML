@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <!-- You may link a CSS stylesheet for styling -->
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            
+            <!-- Email Link -->
+            <p>Email: <a href="mailto:info@techcon2024.com">info@techcon2024.com</a></p>
+            
+            <!-- Social Media Links -->
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://twitter.com/TechCon2024" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
+                <li><a href="https://linkedin.com/company/TechCon2024" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conference Location</h2>
+            <p>Find us at:</p>
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12688.078208288762!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806ea380c5f5%3A0xd4e6cd55f4e4edee!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1595344060240!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section>
+            <h2>Contact Us Form</h2>
+            <p>Have a question or comment? Send us a message:</p>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
